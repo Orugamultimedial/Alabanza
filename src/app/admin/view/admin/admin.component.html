@@ -1,0 +1,85 @@
+<app-header></app-header>
+
+<form class class="form-group">
+
+  <div style="float:right;">
+    <div class="btn-group btn-group-toggle shadow" data-toggle="buttons">
+      <label class="btn btn-primary active">
+        <input type="radio" name="fast" id="option1" autocomplete="on" checked> Rápido
+      </label>
+      <label class="btn btn-primary">
+        <input type="radio" name="slow" id="option2" autocomplete="off"> Lento
+      </label>
+    </div>
+  </div>
+  <br>
+
+  <div style="display:inline-flex;margin-top:5%;margin-bottom:5%">
+    <input class="form-control form-control-sm shadow" style="width:55%;margin-right:10%" type="text" placeholder="Autor" maxlength="20">
+    <select name="a1" class="form-control form-control-sm shadow" style="width:35%;" type="text">
+      <option value="null">Tonalidad</option>
+      <option value="C">C</option>
+      <option value="Cm">Cm</option>
+      <option value="C#">C#</option>
+      <option value="C#m">C#m</option>
+      <option value="Db">Db</option>
+      <option value="Db">Dbm</option>
+      <option value="D">D</option>
+      <option value="D">Dm</option>
+      <option value="D#">D#</option>
+      <option value="D#">D#m</option>
+      <option value="Eb">Eb</option>
+      <option value="Eb">Ebm</option>
+      <option value="E">E</option>
+      <option value="E">Em</option>
+      <option value="F">F</option>
+      <option value="F">Fm</option>
+      <option value="F#">F#</option>
+      <option value="F#">F#m</option>
+      <option value="Gb">Gb</option>
+      <option value="Gb">Gbm</option>
+      <option value="G">G</option>
+      <option value="G">Gm</option>
+      <option value="G#">G#</option>
+      <option value="G#">G#m</option>
+      <option value="Ab">Ab</option>
+      <option value="Ab">Abm</option>
+      <option value="A">A</option>
+      <option value="A">Am</option>
+      <option value="A#">A#</option>
+      <option value="A#">A#m</option>
+      <option value="Bb">Bb</option>
+      <option value="Bb">Bbm</option>
+      <option value="B">B</option>
+      <option value="B">Bm</option>
+    </select>
+  </div>
+
+  <input class="form-control form-control-sm shadow" type="text" placeholder="Ingresa el título" maxlength="50">
+  <br>
+  <div>
+    <div style="width:100%;display: inline-flex;" class="shadow">
+        <app-tone [id]="id"></app-tone>
+        <app-tone [id]="id"></app-tone>
+        <app-tone [id]="id"></app-tone>
+        <app-tone [id]="id"></app-tone>
+        <app-tone [id]="id"></app-tone>
+    </div>
+    <div style="width:100%;display: inline-flex;">
+      <input class="form-control form-control-sm" type="text" placeholder="Escribe la letra..." maxlength="50">
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <button class="btn col-sm-4" >
+      <a href="#">
+        <span class="glyphicon glyphicon-plus"></span>
+      </a>
+      Agregar estrofa
+    </button>
+  </div>
+  <br>
+  <div class="row">
+    <button class="btn btn-success col-sm-8">Listo</button>
+  </div>
+</form>
